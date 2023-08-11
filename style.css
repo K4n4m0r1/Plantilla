@@ -1,0 +1,148 @@
+
+
+ul {
+    list-style: none;
+    display: flex;
+    margin-right: 200px;
+}
+
+ul li {
+    margin:auto 10px ; 
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.3s;
+    border-bottom: 2px solid transparent; 
+}
+
+ul li:hover {
+    color: #ff4500;
+    transform: scale(1.1); 
+    border-bottom: 2px solid #ff4500; 
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000; 
+}
+
+
+.banner {
+    background: url('image/user.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #fff;
+    padding: 150px 0;
+}
+
+.banner p {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.banner span {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.conocenos {
+    background-color: #ff4500;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.conocenos:hover {
+    background-color: #cc3700;
+}
+
+.logo img {
+    height: 40px;
+}
+
+
+.container {
+    padding-top: 70px; 
+}
+
+.descripcion {
+    display: flex;
+    width: 100%;
+    margin: 40px 0;
+    justify-content: space-between;
+}
+
+.texto1 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+}
+
+.imagen1 {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.descripcion2 {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.banner2,
+.banner3 {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.texto1 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+}
+
+.imagen1 {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media (max-width: 768px) {
+    .descripcion {
+        flex-direction: column;
+    }
+    
+    .texto1, .imagen1 {
+        width: 100%;
+    }
+}
